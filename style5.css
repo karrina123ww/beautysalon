@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'LuraFont';
+  src: url('fonts/Chango-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LuraFont1';
+  src: url('fonts/MontserratAlternates-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LuraFont2';
+  src: url('fonts/MontserratAlternates-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LuraFont3';
+  src: url('fonts/MontserratAlternates-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  color: #88605F;
+  background: #F3E1DA;
+  font-family: 'LuraFont', sans-serif;
+}
+
+/* ===== ШАПКА ===== */
+.header {
+  background: #88605F;
+  padding: 15px 8%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left a,
+.nav-right a {
+  margin: 0 100px;
+  text-decoration: none;
+  color: #F3E0D9;
+  font-size: 20px;
+  font-family: 'LuraFont1';
+}
+
+.nav-logo {
+  font-size: 55px;
+  font-weight: bold;
+  color: #F3E0D9;
+}
+
+.price-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    height: 60vh;
+}
+
+.price-title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -60px;
+    font-weight: 300;
+    font-size: 60px;
+    color: #88605F;
+    font-family: 'LuraFont2';
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF1ED;
+    padding: 20px 55px;
+    border-radius: 20px;
+}
+
+.service-name,
+.service-price {
+    font-size: 20px;
+    color: #88605F;
+    font-family: 'LuraFont1';
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #88605F;
+    color: #F3E0D9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Левая часть - ссылки */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 40px;
+    font-family: 'LuraFont1';
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #F3E0D9;
+    text-decoration: none;
+}
+
+/* Центральная часть - соцсети */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'LuraFont1';
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: -20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Правая часть - контактная информация */
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'LuraFont1';
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+}
