@@ -218,3 +218,28 @@ body {
 .contact-icon {
     flex-shrink: 0;
 }
+
+.carousel {
+    max-width: 1000px;    /* Ширина */
+    height: 400px;       /* Высота */
+    margin: 0 auto;      /* Центрирование */
+    margin-bottom: 250px;
+}
+
+.carousel .carousel-item img {
+    object-fit: cover;   /* Чтобы фото заполняло область */
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    padding-top: 150px;
+}
+
+.slider h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: -20px;
+    color: #88605F;
+    font-family: 'LuraFont2';
+}
