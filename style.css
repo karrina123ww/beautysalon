@@ -219,3 +219,159 @@ body {
 .contact-icon {
     flex-shrink: 0;
 }
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Шапка */
+  .header {
+    padding: 10px 5%;
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between; /* раздвигаем левую и правую части */
+    align-items: center;
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 250px;
+    bottom: 30px;
+    position: relative;
+  }
+  
+  .nav-left a,
+  .nav-right a {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .nav-logo {
+    font-size: 40px;
+    order: -1;
+    position: relative;
+    top: 25px;
+  }
+  
+  /* Hero блок */
+  .hero {
+    height: 70vh;
+    padding-left: 5%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+    background: #dfc4b9;
+    background-image: none !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+  
+  /* Offers блок */
+  .offers-text {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+    gap: 20px;
+  }
+  
+  .offer img {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 0;
+  }
+  
+  /* About блок */
+  .about {
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 30px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .about-text h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Подвал */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .footer-social {
+    margin-top: 0;
+  }
+  
+  .footer-contacts {
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 50px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  .nav-left a,
+  .nav-right a {
+    font-size: 14px;
+    gap: 10px;
+  }
+  
+  .offers-text {
+    font-size: 20px;
+  }
+}

@@ -250,3 +250,157 @@ input[type="date"].form-field::-webkit-calendar-picker-indicator {
 .contact-icon {
     flex-shrink: 0;
 }
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+@media (max-width: 768px) {
+  /* Общие настройки */
+  body {
+    font-size: 14px;
+  }
+  
+  /* Шапка */
+  .header {
+    padding: 10px 5%;
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between; /* раздвигаем левую и правую части */
+    align-items: center;
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 250px;
+    bottom: 30px;
+    position: relative;
+  }
+  
+  .nav-left a,
+  .nav-right a {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .nav-logo {
+    font-size: 40px;
+    order: -1;
+    position: relative;
+    top: 25px;
+  }
+  
+  /* Контейнер формы */
+  .booking-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Заголовок */
+  .booking-title {
+    font-size: 36px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Форма */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 14px;
+  }
+  
+  .form-field {
+    padding: 12px;
+    font-size: 14px;
+    border-width: 2px;
+  }
+  
+  /* Кнопка */
+  .submit-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 14px;
+    font-size: 1rem;
+    margin: 20px auto 0;
+  }
+  
+  /* Подвал */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .footer-social {
+    margin-top: 0;
+  }
+  
+  .footer-contacts {
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .booking-title {
+    font-size: 28px;
+  }
+  
+  .booking-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  .form-field {
+    padding: 10px;
+  }
+  
+  select.form-field {
+    padding-right: 35px;
+    background-position: right 10px center;
+  }
+  
+  .nav-left a,
+  .nav-right a {
+    font-size: 14px;
+    gap: 10px;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Для планшетов (средние экраны) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .booking-container {
+    max-width: 80%;
+    margin: 40px auto;
+  }
+  
+  .booking-title {
+    font-size: 48px;
+  }
+}
